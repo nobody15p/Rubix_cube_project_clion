@@ -1,0 +1,3 @@
+C:/files/Coding/Algorithms and Data structure various courses/Algozienth/Rubix cube project/Rubix cube project clion/cmake-build-debug/CMakeFiles/Rubix_cube_project_clion.dir
+C:/files/Coding/Algorithms and Data structure various courses/Algozienth/Rubix cube project/Rubix cube project clion/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/files/Coding/Algorithms and Data structure various courses/Algozienth/Rubix cube project/Rubix cube project clion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
