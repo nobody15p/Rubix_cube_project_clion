@@ -114,3 +114,69 @@ GenericRubiksCube &GenericRubiksCube::move(MOVE ind) {
             return this->b2();
     }
 }
+
+void GenericRubiksCube::print() const {
+    cout << "Rubik's Cube:\n\n";
+    for (int row = 0; row <= 2; ++row) {
+        for (unsigned i = 0; i < 7; ++i) {
+            cout << " ";
+        }
+        for (int col = 0; col < 3; ++col) {
+            cout << getColorLetter(getColor(FACE::UP, row, col)) << " ";
+        }
+        cout << "\n";
+    }
+
+    cout << "\n";
+
+    for (int row = 0; row < 3; ++row) {
+        for (unsigned i = 0; i < 7; ++i) {
+            cout << " ";
+        }
+        for (int col = 0; col < 3; ++col) {
+            cout << getColorLetter(getColor(FACE::LEFT, row, col)) << " ";
+        }
+        cout << " ";
+
+        for (int col = 0; col < 3; ++col) {
+            cout << getColorLetter(getColor(FACE::FRONT, row, col)) << " ";
+        }
+        cout << " ";
+
+        for (int col = 0; col < 3; ++col) {
+            cout << getColorLetter(getColor(FACE::RIGHT, row, col)) << " ";
+        }
+        cout << " ";
+    }
+
+    cout << "\n";
+
+    for (int row = 0; row < 3; ++row) {
+        for (unsigned i = 0; i < 7; ++i) {
+            cout << " ";
+        }
+        for (int col = 0; col < 3; ++col) {
+            cout << getColorLetter(getColor(FACE::DOWN, row, col)) << " ";
+        }
+        cout << "\n";
+    }
+    cout << "\n";
+}
+
+/*
+ * this function shuffles cube using random 18 moves available
+ */
+vector<GenericRubiksCube::MOVE> GenericRubiksCube::randomShuffleCube(unsigned int times) {
+    vector<MOVE> moves_performed;
+    srand(time(0));
+    for (unsigned int i = 0; i < times; i++) {
+        unsigned int selectMove = (rand() % 18);
+        moves_performed.push_back(static_cast<MOVE>(selectMove));
+        // static_cast<MOVE>(selectMove) typecasts selectMove to datatype MOVE
+        this->move(static_cast<MOVE>(selectMove));
+    }
+    return moves_performed;
+}
+
+
+
