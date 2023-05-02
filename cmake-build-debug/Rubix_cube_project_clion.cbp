@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/files/Coding/Algorithms and Data structure various courses/Algozienth/Rubix cube project/Rubix cube project clion/GenericRubiksCube.cpp">
+			<Option target="Rubix_cube_project_clion"/>
+		</Unit>
+		<Unit filename="C:/files/Coding/Algorithms and Data structure various courses/Algozienth/Rubix cube project/Rubix cube project clion/GenericRubiksCube.h++">
+			<Option target="Rubix_cube_project_clion"/>
+		</Unit>
 		<Unit filename="C:/files/Coding/Algorithms and Data structure various courses/Algozienth/Rubix cube project/Rubix cube project clion/main.cpp">
 			<Option target="Rubix_cube_project_clion"/>
 		</Unit>

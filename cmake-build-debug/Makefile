@@ -128,6 +128,30 @@ Rubix_cube_project_clion/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubix_cube_project_clion.dir\build.make CMakeFiles/Rubix_cube_project_clion.dir/build
 .PHONY : Rubix_cube_project_clion/fast
 
+GenericRubiksCube.obj: GenericRubiksCube.cpp.obj
+.PHONY : GenericRubiksCube.obj
+
+# target to build an object file
+GenericRubiksCube.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubix_cube_project_clion.dir\build.make CMakeFiles/Rubix_cube_project_clion.dir/GenericRubiksCube.cpp.obj
+.PHONY : GenericRubiksCube.cpp.obj
+
+GenericRubiksCube.i: GenericRubiksCube.cpp.i
+.PHONY : GenericRubiksCube.i
+
+# target to preprocess a source file
+GenericRubiksCube.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubix_cube_project_clion.dir\build.make CMakeFiles/Rubix_cube_project_clion.dir/GenericRubiksCube.cpp.i
+.PHONY : GenericRubiksCube.cpp.i
+
+GenericRubiksCube.s: GenericRubiksCube.cpp.s
+.PHONY : GenericRubiksCube.s
+
+# target to generate assembly for a file
+GenericRubiksCube.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubix_cube_project_clion.dir\build.make CMakeFiles/Rubix_cube_project_clion.dir/GenericRubiksCube.cpp.s
+.PHONY : GenericRubiksCube.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Rubix_cube_project_clion
+	@echo ... GenericRubiksCube.obj
+	@echo ... GenericRubiksCube.i
+	@echo ... GenericRubiksCube.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
