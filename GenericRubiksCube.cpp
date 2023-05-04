@@ -115,6 +115,50 @@ GenericRubiksCube &GenericRubiksCube::move(MOVE ind) {
     }
 }
 
+/*
+ * Invert a move.
+ */
+GenericRubiksCube &GenericRubiksCube::invert(MOVE ind) {
+    switch (ind) {
+        case MOVE::L:
+            return this->lPrime();
+        case MOVE::LPRIME:
+            return this->l();
+        case MOVE::L2:
+            return this->l2();
+        case MOVE::R:
+            return this->rPrime();
+        case MOVE::RPRIME:
+            return this->r();
+        case MOVE::R2:
+            return this->r2();
+        case MOVE::U:
+            return this->uPrime();
+        case MOVE::UPRIME:
+            return this->u();
+        case MOVE::U2:
+            return this->u2();
+        case MOVE::D:
+            return this->dPrime();
+        case MOVE::DPRIME:
+            return this->d();
+        case MOVE::D2:
+            return this->d2();
+        case MOVE::F:
+            return this->fPrime();
+        case MOVE::FPRIME:
+            return this->f();
+        case MOVE::F2:
+            return this->f2();
+        case MOVE::B:
+            return this->bPrime();
+        case MOVE::BPRIME:
+            return this->b();
+        case MOVE::B2:
+            return this->b2();
+    }
+}
+
 void GenericRubiksCube::print() const {
     cout << "Rubik's Cube:\n\n";
     for (int row = 0; row <= 2; ++row) {
@@ -247,6 +291,41 @@ uint8_t GenericRubiksCube::getCornerIndex(uint8_t ind) const {
     string corner = getCornerColorString(ind);
 
     uint8_t ret = 0;
+    for (auto c: corner) {
+        if (c != 'W' && c != 'Y') continue;
+        if (c == 'Y') {
+            ret |= (1 << 2);
+        }
+    }
 
+    for (auto c: corner) {
+        if (c != 'R' && c != 'O') continue;
+        if (c == 'O') {
+            ret |= (1 << 1);
+        }
+    }
+
+    for (auto c: corner) {
+        if (c != 'B' && c != 'G') continue;
+        if (c == 'G') {
+            ret |= (1 << 0);
+        }
+    }
+    return ret;
+}
+
+uint8_t GenericRubiksCube::getCornerOrientation(uint8_t ind) const {
+    string corner = getCornerColorString(ind);
+    string actual_str = "";
+    for (auto c: corner) {
+        if (c != 'W' && c != 'Y') continue;
+        actual_str.push_back(c);
+    }
+
+    if (corner[1] == actual_str[0]) {
+        return 1;
+    } else if (corner[2] == actual_str[0]) {
+        return 2;
+    } else return 0;
 }
 
