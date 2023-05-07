@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Rubix_cube_project_clion.dir/GenericRubiksCube.cpp.obj"
   "CMakeFiles/Rubix_cube_project_clion.dir/GenericRubiksCube.cpp.obj.d"
+  "CMakeFiles/Rubix_cube_project_clion.dir/RubiksCube3DArray.cpp.obj"
+  "CMakeFiles/Rubix_cube_project_clion.dir/RubiksCube3DArray.cpp.obj.d"
   "CMakeFiles/Rubix_cube_project_clion.dir/main.cpp.obj"
   "CMakeFiles/Rubix_cube_project_clion.dir/main.cpp.obj.d"
   "Rubix_cube_project_clion.exe"

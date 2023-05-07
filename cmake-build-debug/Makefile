@@ -152,6 +152,30 @@ GenericRubiksCube.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubix_cube_project_clion.dir\build.make CMakeFiles/Rubix_cube_project_clion.dir/GenericRubiksCube.cpp.s
 .PHONY : GenericRubiksCube.cpp.s
 
+RubiksCube3DArray.obj: RubiksCube3DArray.cpp.obj
+.PHONY : RubiksCube3DArray.obj
+
+# target to build an object file
+RubiksCube3DArray.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubix_cube_project_clion.dir\build.make CMakeFiles/Rubix_cube_project_clion.dir/RubiksCube3DArray.cpp.obj
+.PHONY : RubiksCube3DArray.cpp.obj
+
+RubiksCube3DArray.i: RubiksCube3DArray.cpp.i
+.PHONY : RubiksCube3DArray.i
+
+# target to preprocess a source file
+RubiksCube3DArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubix_cube_project_clion.dir\build.make CMakeFiles/Rubix_cube_project_clion.dir/RubiksCube3DArray.cpp.i
+.PHONY : RubiksCube3DArray.cpp.i
+
+RubiksCube3DArray.s: RubiksCube3DArray.cpp.s
+.PHONY : RubiksCube3DArray.s
+
+# target to generate assembly for a file
+RubiksCube3DArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Rubix_cube_project_clion.dir\build.make CMakeFiles/Rubix_cube_project_clion.dir/RubiksCube3DArray.cpp.s
+.PHONY : RubiksCube3DArray.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... GenericRubiksCube.obj
 	@echo ... GenericRubiksCube.i
 	@echo ... GenericRubiksCube.s
+	@echo ... RubiksCube3DArray.obj
+	@echo ... RubiksCube3DArray.i
+	@echo ... RubiksCube3DArray.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
