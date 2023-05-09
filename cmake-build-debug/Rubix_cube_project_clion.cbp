@@ -88,6 +88,9 @@
 		<Unit filename="C:/files/Coding/Algorithms and Data structure various courses/Algozienth/Rubix cube project/Rubix cube project clion/GenericRubiksCube.h++">
 			<Option target="Rubix_cube_project_clion"/>
 		</Unit>
+		<Unit filename="C:/files/Coding/Algorithms and Data structure various courses/Algozienth/Rubix cube project/Rubix cube project clion/RubiksCube1DArray.cpp">
+			<Option target="Rubix_cube_project_clion"/>
+		</Unit>
 		<Unit filename="C:/files/Coding/Algorithms and Data structure various courses/Algozienth/Rubix cube project/Rubix cube project clion/RubiksCube3DArray.cpp">
 			<Option target="Rubix_cube_project_clion"/>
 		</Unit>
